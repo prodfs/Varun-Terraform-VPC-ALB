@@ -10,7 +10,7 @@ az2 = "ap-south-1b"
 ami_id        = "ami-02b8269d5e85954ef"
 instance_type = "t3.micro"
 
-bucket_name = "terraform-s3-test-reya-project"
+bucket_name = "terraform-s3-test-varun-project"
 
 alb_name          = "myalb"
 target_group_name = "myTG"
