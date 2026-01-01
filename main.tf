@@ -82,6 +82,7 @@ resource "aws_instance" "web_server_az1" {
   instance_type          = var.instance_type
   subnet_id              = aws_subnet.public_subnet_az1.id
   vpc_security_group_ids = [aws_security_group.web_security_group.id]
+  user_data              = base64encode(file("userdata.sh"))
 }
 
 resource "aws_instance" "web_server_az2" {
@@ -89,6 +90,7 @@ resource "aws_instance" "web_server_az2" {
   instance_type          = var.instance_type
   subnet_id              = aws_subnet.public_subnet_az2.id
   vpc_security_group_ids = [aws_security_group.web_security_group.id]
+  user_data              = base64encode(file("userdata1.sh"))
 }
 
 # Application Load Balancer
