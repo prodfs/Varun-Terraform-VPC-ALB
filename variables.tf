@@ -1,0 +1,11 @@
+variable "aws_region" { type = string }
+variable "vpc_cidr" { type = string }
+variable "subnet1_cidr" { type = string }
+variable "subnet2_cidr" { type = string }
+variable "az1" { type = string }
+variable "az2" { type = string }
+variable "ami_id" { type = string }
+variable "instance_type" { type = string }
+variable "bucket_name" { type = string }
+variable "alb_name" { type = string }
+variable "target_group_name" { type = string }
